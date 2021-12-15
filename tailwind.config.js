@@ -3,7 +3,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				roboto: ['Roboto', 'sans-serif'],
+				worksans: ['"Work Sans"', 'sans-serif'],
 			},
 		},
 	},
