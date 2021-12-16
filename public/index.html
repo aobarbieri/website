@@ -44,8 +44,8 @@
 			</nav>
 		</header>
 
-		<article class="mx-6 py-8 md:h-screen">
-			<section>
+		<article class="mx-6 py-8 md:h-screen md:right-0 md:grid md:grid-cols-2  md:place-content-center">
+			<section class='md:pl-10 md:justify-self-start lg:w-2/3'>
 				<h1 class="font-bold pb-6">Hello</h1>
 				<h2 class="text-lg font-semibold">A Bit About Me</h2>
 				<p class="text-justify mb-4">
@@ -54,25 +54,25 @@
 					ideas.
 				</p>
 				<div class="flex flex-nowrap justify-between text-lg">
-					<button class="bg-rose-300 py-9 px-3 border border-black rounded-full font-semibold">Resume</button>
-					<button class="bg-orange-300 py-9 px-3 border border-black rounded-full font-semibold">Projects</button>
-					<button class="bg-teal-300 py-9 px-3 border border-black rounded-full font-semibold">Contact</button>
+					<button class="bg-rose-300 py-9 px-3 border border-gray-600 rounded-full font-semibold">Resume</button>
+					<button class="bg-orange-300 py-9 px-3 border border-gray-600 rounded-full font-semibold">Projects</button>
+					<button class="bg-teal-300 py-9 px-3 border border-gray-600 rounded-full font-semibold">Contact</button>
 				</div>
 			</section>
-			<img class="mt-4 w-screen" src="../src/avatar.png" alt="Amanda's Avatar" />
+			<img class="mt-4 md:mt-0 w-screen md:order-first md:max-h-96 md:w-96 md:justify-self-end" src="../src/avatar.png" alt="Amanda's Avatar" />
 		</article>
 
-		<footer class='border-t px-6 py-8 text-base'>
+		<footer class='border-t border-gray-300 px-6 pb-8 pt-12 mb-16 text-base md:grid md:grid-cols-3 md:place-items-center'>
 			<div>
 				<h4 class='text-lg font-semibold'>Phone</h4>
 				<p>914-539-7557</p>
 			</div>
 			<div>
-				<h4 class='mt-6 text-lg font-semibold'>Email</h4>
+				<h4 class='mt-6 md:mt-0 text-lg font-semibold'>Email</h4>
 				<p>aobarbieri@gmail.com</p>
 			</div>
 			<div>
-				<h4 class='mt-6 text-lg font-semibold'>Follow Me</h4>
+				<h4 class='mt-6 md:mt-0 text-lg font-semibold'>Follow Me</h4>
 				<i class="fab fa-linkedin-in mr-3 text-lg"></i>
 				<i class="fab fa-github-alt text-lg"></i>
 			</div>

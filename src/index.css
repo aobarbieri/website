@@ -42,3 +42,13 @@
 h1 {
     font-size: 2.5rem;
 }
+
+@media screen and (min-width: 768px){
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+article {
+    margin-right: 0px;
+}
