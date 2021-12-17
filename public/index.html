@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Amanda Barbieri</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link href="styles.css" rel="stylesheet" />
 		<link href="../src/index.css" rel="stylesheet" />
 
@@ -16,8 +17,8 @@
 		/>
 	</head>
 
-	<body class="font-worksans text-sm bg-gray-100 text-black">
-		<header>
+	<body class="font-worksans text-base bg-gray-100 text-black">
+		<header class="md:h-screen md:mb-14">
 			<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
 				<div class="flex items-end">
 					<img class="hidden md:inline md:h-7" src="../src/html-logo.svg" alt="HTML logo" />
@@ -34,7 +35,7 @@
 						divide-gray-900
 					"
 				>
-					<li class="text-2xl md:text-base md:pr-3">Resume</li>
+					<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
 					<li class="text-2xl md:text-base py-6 md:py-0 md:px-3">Projects</li>
 					<li class="text-2xl md:text-base md:pl-3">Contact</li>
 				</ul>
@@ -42,37 +43,109 @@
 					<i class="fas fa-bars"></i>
 				</button>
 			</nav>
+
+			<main class="mx-6 lg:mt-32 py-8 lg:grid lg:grid-cols-2 lg:place-content-center">
+				<section class="lg:mt-4 lg:ml-10 lg:justify-self-start lg:w-3/4">
+					<div class="mb-4 md:mb-9 md:px-6">
+						<h1 class="text-5xl md:text-8xl font-bold my-6">Hello</h1>
+						<h2 class="text-xl md:text-2xl font-semibold md:pl-1">A Bit About Me</h2>
+						<p class="md:pl-1">
+							As a developer, my goal is to build applications that reflect a good user experience and
+							great performance.
+						</p>
+					</div>
+
+					<div
+						class="
+							flex flex-nowrap
+							md:mb-12
+							justify-between
+							md:justify-center
+							lg:justify-evenly
+							md:text-2xl
+						"
+					>
+						<button
+							class="
+								hover:bg-teal-200
+								py-9
+								px-4
+								md:py-14 md:px-6
+								border border-gray-600
+								rounded-full
+								font-semibold
+							"
+						>
+							Resume
+						</button>
+						<button
+							class="
+								lg:
+								mx-2
+								py-9
+								px-4
+								md:py-14 md:px-6
+								hover:bg-teal-200
+								border border-gray-600
+								rounded-full
+								font-semibold
+							"
+						>
+							Projects
+						</button>
+						<button
+							class="
+								hover:bg-teal-200
+								py-9
+								px-4
+								md:py-14 md:px-6
+								border border-gray-600
+								rounded-full
+								font-semibold
+							"
+						>
+							Contact
+						</button>
+					</div>
+				</section>
+				<img
+					class="
+						mt-4
+						md:mx-auto
+						lg:mx-0 lg:mt-0
+						md:max-h-128
+						lg:h-fit
+						w-screen
+						md:max-w-md
+						lg:max-w-lg lg:justify-self-end lg:order-first
+					"
+					src="../src/avatar.png"
+					alt="Amanda's Avatar"
+				/>
+			</main>
 		</header>
 
-		<article class="mx-6 py-8 md:h-screen md:right-0 md:grid md:grid-cols-2  md:place-content-center">
-			<section class='md:pl-10 md:justify-self-start lg:w-2/3'>
-				<h1 class="font-bold pb-6">Hello</h1>
-				<h2 class="text-lg font-semibold">A Bit About Me</h2>
-				<p class="text-justify mb-4">
-					As a developer, my goal is to build applications that reflect a good user experience and great
-					performance. I enjoy building my own side projects which are usually the way for me to explore new
-					ideas.
-				</p>
-				<div class="flex flex-nowrap justify-between text-lg">
-					<button class="bg-rose-300 py-9 px-3 border border-gray-600 rounded-full font-semibold">Resume</button>
-					<button class="bg-orange-300 py-9 px-3 border border-gray-600 rounded-full font-semibold">Projects</button>
-					<button class="bg-teal-300 py-9 px-3 border border-gray-600 rounded-full font-semibold">Contact</button>
-				</div>
-			</section>
-			<img class="mt-4 md:mt-0 w-screen md:order-first md:max-h-96 md:w-96 md:justify-self-end" src="../src/avatar.png" alt="Amanda's Avatar" />
-		</article>
-
-		<footer class='border-t border-gray-300 px-6 pb-8 pt-12 mb-16 text-base md:grid md:grid-cols-3 md:place-items-center'>
+		<footer
+			class="
+				border-t border-gray-300
+				px-6
+				pt-12
+				pb-16
+				my-8
+				text-base
+				md:grid md:grid-cols-3 md:place-items-center
+			"
+		>
 			<div>
-				<h4 class='text-lg font-semibold'>Phone</h4>
+				<h4 class="text-lg font-semibold">Phone</h4>
 				<p>914-539-7557</p>
 			</div>
 			<div>
-				<h4 class='mt-6 md:mt-0 text-lg font-semibold'>Email</h4>
+				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Email</h4>
 				<p>aobarbieri@gmail.com</p>
 			</div>
 			<div>
-				<h4 class='mt-6 md:mt-0 text-lg font-semibold'>Follow Me</h4>
+				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Follow Me</h4>
 				<i class="fab fa-linkedin-in mr-3 text-lg"></i>
 				<i class="fab fa-github-alt text-lg"></i>
 			</div>
