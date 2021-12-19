@@ -12,7 +12,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
@@ -44,12 +44,12 @@
 				</button>
 			</nav>
 
-			<main class="mx-4 lg:mt-32 py-8 lg:grid lg:grid-cols-2 lg:place-content-center">
-				<section class="lg:mt-4 lg:ml-10 lg:justify-self-start lg:w-3/4">
+			<main class="mx-4 py-8 lg:mt-48 lg:mx-32 lg:flex">
+				<section class="lg:mt-4 lg:justify-self-start lg:w-3/4">
 					<div class="mb-4 md:mb-9 md:px-6">
 						<h1 class="text-5xl md:text-8xl font-bold my-6">Hello</h1>
-						<h2 class="text-xl md:text-2xl font-semibold md:pl-1">A Bit About Me</h2>
-						<p class="md:pl-1">
+						<!-- <h2 class="text-xl md:text-2xl font-semibold md:pl-1">A Bit About Me</h2> -->
+						<p class="md:pl-1 font-light">
 							As a developer, my goal is to build applications that reflect a good user experience and
 							great performance.
 						</p>
@@ -62,63 +62,37 @@
 							justify-between
 							md:justify-center
 							lg:justify-evenly
-							md:text-2xl
+							text-sm
+							lg:text-lg
 						"
 					>
-						<button
-							class="
-								hover:bg-teal-200
-								py-9
-								px-4
-								md:py-14 md:px-6
-								border border-gray-600
-								rounded-full
-								font-semibold
-							"
-						>
-							Resume
-						</button>
-						<button
-							class="
-								lg:
-								mx-2
-								py-9
-								px-4
-								md:py-14 md:px-6
-								hover:bg-teal-200
-								border border-gray-600
-								rounded-full
-								font-semibold
-							"
-						>
+						<a href="../public/resume.html" class="font-medium uppercase">
+							<img
+								class="md:pr-1 h-8 md:h-14 inline"
+								src="../src/images/resume.png"
+								alt="Resume's Icon"
+							/>Resume
+						</a>
+						<a href="../public/projects.html" class="md:mx-6 font-medium uppercase">
+							<img
+								class="md:pr-1 h-8 md:h-14 inline"
+								src="../src/images/projection.png"
+								alt="Projects' Icon"
+							/>
 							Projects
-						</button>
-						<button
-							class="
-								hover:bg-teal-200
-								py-9
-								px-4
-								md:py-14 md:px-6
-								border border-gray-600
-								rounded-full
-								font-semibold
-							"
-						>
+						</a>
+						<a href="../public/contact.html" class="font-medium uppercase">
+							<img
+								class="md:pr-1 h-8 md:h-14 inline"
+								src="../src/images/contact.png"
+								alt="Contact's Icon"
+							/>
 							Contact
-						</button>
+						</a>
 					</div>
 				</section>
 				<img
-					class="
-						mt-4
-						md:mx-auto
-						lg:mx-0 lg:mt-0
-						md:max-h-128
-						lg:h-fit
-						w-screen
-						md:max-w-md
-						lg:max-w-lg lg:justify-self-end lg:order-first
-					"
+					class="mt-8 md:mx-auto lg:mr-10 w-screen md:max-h-96 md:max-w-sm lg:justify-self-end lg:order-first"
 					src="../src/images/avatar.png"
 					alt="Amanda's Avatar"
 				/>
@@ -138,11 +112,11 @@
 		>
 			<div>
 				<h4 class="text-lg font-semibold">Phone</h4>
-				<p>914-539-7557</p>
+				<p class="font-light">914-539-7557</p>
 			</div>
 			<div>
 				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Email</h4>
-				<p>aobarbieri@gmail.com</p>
+				<p class="font-light">aobarbieri@gmail.com</p>
 			</div>
 			<div>
 				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Follow Me</h4>
