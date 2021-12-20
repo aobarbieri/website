@@ -4,21 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Amanda Barbieri</title>
+
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link href="styles.css" rel="stylesheet" />
 		<link href="../src/index.css" rel="stylesheet" />
-
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<script src="https://unpkg.com/scrollreveal@4"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+		<script src="./script.js" defer></script>
 	</head>
 
 	<body class="font-worksans text-base bg-gray-100 text-black">
-		<header class="lg:h-screen md:mb-14">
+		<header class="lg:h-screen xl:h-full xl:mb-64 md:mb-14">
 			<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
 				<div class="flex items-end">
 					<img class="hidden md:inline md:h-7" src="../src/images/html-logo.svg" alt="HTML logo" />
@@ -36,27 +41,27 @@
 					"
 				>
 					<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
-					<li class="text-2xl md:text-base py-6 md:py-0 md:px-3">Projects</li>
-					<li class="text-2xl md:text-base md:pl-3">Contact</li>
+					<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Projects</a></li>
+					<li class="text-2xl md:text-base md:pl-3"><a href="contact.html">Contact</a></li>
 				</ul>
-				<button class="navbar__menu-btn pr-4">
+				<button id="menu-btn" class="navbar__menu-btn pr-4">
 					<i class="fas fa-bars"></i>
 				</button>
 			</nav>
 
-			<main class="mx-4 py-8 lg:mt-48 lg:mx-32 lg:flex">
-				<section class="lg:mt-4 lg:justify-self-start lg:w-3/4">
+			<main class="mx-4 py-8 lg:mt-40 lg:mx-32 lg:flex lg:justify-center">
+				<section class="lg:mt-4 lg:justify-self-start lg:w-3/4 xl:max-w-lg">
 					<div class="mb-4 md:mb-9 md:px-6">
-						<h1 class="text-5xl md:text-8xl font-bold my-6">Hello</h1>
+						<h1 class="headline text-5xl md:text-8xl font-bold my-6">Hello</h1>
 						<!-- <h2 class="text-xl md:text-2xl font-semibold md:pl-1">A Bit About Me</h2> -->
-						<p class="md:pl-1 font-light">
+						<p class="punchline md:pl-1 font-light">
 							As a developer, my goal is to build applications that reflect a good user experience and
 							great performance.
 						</p>
 					</div>
-
 					<div
 						class="
+							tagline
 							flex flex-nowrap
 							md:mb-12
 							justify-between
@@ -91,8 +96,17 @@
 						</a>
 					</div>
 				</section>
+
 				<img
-					class="mt-8 md:mx-auto lg:mr-10 w-screen md:max-h-96 md:max-w-sm lg:justify-self-end lg:order-first"
+					class="
+						headline
+						file:mt-8
+						md:mx-auto
+						lg:mr-10
+						w-screen
+						md:max-h-96 md:max-w-sm
+						lg:justify-self-end lg:order-first
+					"
 					src="../src/images/avatar.png"
 					alt="Amanda's Avatar"
 				/>
@@ -127,7 +141,10 @@
 			</div>
 		</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script language="javascript" type="text/javascript" src="./script.js"></script>
+		<script>
+			ScrollReveal().reveal('.headline', { delay: 500, duration: 1500 });
+			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 1500 });
+			ScrollReveal().reveal('.tagline', { delay: 2000, duration: 1500 });
+		</script>
 	</body>
 </html>

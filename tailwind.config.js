@@ -5,9 +5,10 @@ module.exports = {
 			fontFamily: {
 				worksans: ['"Work Sans"', 'sans-serif'],
 			},
-			maxHeight: {
-				'128': '32rem',
-			  },
+			height: {
+				112: '28rem',
+				128: '32rem',
+			},
 		},
 	},
 	plugins: [],

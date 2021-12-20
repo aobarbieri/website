@@ -12,11 +12,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="font-worksans text-base bg-gray-100 text-black">
+	<body class="font-worksans font-light bg-gray-100 text-black">
 		<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
 			<div class="flex items-end">
 				<a class="" href="index.html">
@@ -37,24 +37,58 @@
 			</button>
 		</nav>
 
-		<main class="m-4 text-lg">
-			<h1 class="pb-8 text-4xl font-bold">Projects</h1>
+		<main class="px-4 py-6 lg:m-0 text-lg lg:px-40">
+			<h1 class="pb-8 text-4xl lg:text-5xl font-bold">Projects</h1>
 
-			<article>
-				<section>
-					<h2 class="pb-1 text-3xl font-semibold">flickbase</h2>
-					<p>tell me about it</p>
-					<img class="pt-6" src="../src/images/flickbase.png" alt="flickbase project avatar" />
+			<article class="text-base">
+				<section class="md:flex justify-between">
+					<div class="md:mr-10 lg:basis-1/3">
+						<h2 class="pb-4 lg:pb-6 text-3xl font-semibold">flickbase</h2>
+						<p>
+							Flickbase simulates a streaming website. It offers a library with the most popular filmes
+							and television series using The Movie DB API.<br />
+							Technologies used: React, Typescript, Tailwind v2.2.16, FontAwesome, React Slick, The Movie
+							DB v3 API, and EventEmitter from Facebook.
+						</p>
+						<a
+							href="https://flick-base.netlify.app/"
+							target="_blank"
+							class="mt-4 mb-2 block uppercase text-sm font-medium"
+							>Click to view</a
+						>
+						<a href="https://github.com/aobarbieri/flick-base" target="_blank"
+							><i class="fab fa-github-alt text-lg"></i> GitHub</a
+						>
+					</div>
+					<img
+						class="pt-6 md:pt-0 md:h-112"
+						src="../src/images/flickbase.png"
+						alt="flickbase project avatar"
+					/>
 				</section>
-				<section class="my-6">
-					<h2 class="pb-1 text-3xl font-semibold">Quote Generator</h2>
-					<p>tell me about it</p>
-					<img class="pt-6" src="../src/images/quote-generator.png" alt="Quote Generator project avatar" />
-				</section>
-				<section>
-					<h2 class="pb-1 text-3xl font-semibold">flickbase</h2>
-					<p>tell me about it</p>
-					<img class="pt-6" src="../src/images/flickbase.png" alt="flickbase project avatar" />
+
+				<section class="my-6 md:my-28 md:flex justify-between">
+					<div class="md:mr-10 lg:basis-1/3">
+						<h2 class="pb-4 lg:pb-6 text-3xl font-semibold">Quote Generator</h2>
+						<p>
+							Motivational quotes to enlighten your day. Quote Generator does an asynchronous fetch
+							request to an API in order to get quotes
+						</p>
+						<a
+							href="https://aobarbieri.github.io/quote-generator/"
+							target="_blank"
+							class="mt-4 mb-2 block uppercase text-sm font-medium"
+							>Click to view</a
+						>
+						<a href="https://github.com/aobarbieri/quote-generator" target="_blank"
+							><i class="fab fa-github-alt text-lg"></i> GitHub</a
+						>
+					</div>
+					<img
+						class="pt-6 md:pt-0 md:h-112"
+						src="../src/images/quote-generator.png"
+						alt="Quote Generator project avatar"
+					/>
 				</section>
 			</article>
 		</main>
