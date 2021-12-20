@@ -5,15 +5,16 @@
 .navbar {
     grid-template-columns: auto 10%;
 }
-.navbar__menu-btn {
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
 
-    font-size: 1.5rem;
-    width: fit-content;
-    background: unset;
-    border: unset;
+.navbar__menu-btn {
+    cursor  : pointer;
+    position: relative;
+    z-index : 10;
+
+    font-size   : 1.5rem;
+    width       : fit-content;
+    background  : unset;
+    border      : unset;
     justify-self: end;
 }
 
@@ -24,17 +25,26 @@
 }
 
 .navbar__links.active {
-    display: grid;
-    align-content: start;
+    display        : grid;
+    align-content  : start;
     justify-content: center;
 
-    position: absolute;
+    position   : absolute;
     padding-top: 8rem;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    
-    width: 100vw;
-    height: 100vh;
+    top        : 0;
+    left       : 0;
+    z-index    : 10;
+
+    width           : 100vw;
+    height          : 100vh;
     background-color: rgb(243 244 246);
+}
+
+#status.success {
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    color    : rgb(255, 0, 0);
+    animation: status 4s ease forwards;
 }

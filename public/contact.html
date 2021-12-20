@@ -15,12 +15,15 @@
 			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+		<script src="./contact-form.js" defer></script>
+		<script src="./script.js" defer></script>
 	</head>
 	<body class="font-worksans text-base bg-gray-100 text-black">
 		<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
 			<div class="flex items-end">
 				<a class="" href="index.html">
-					<img class="hidden md:inline md:h-7" src="../src/html-logo.svg" alt="HTML element logo" />
+					<img class="hidden md:inline md:h-7" src="../src/images/html-logo.svg" alt="HTML element logo" />
 				</a>
 				<a class="" href="index.html">
 					<h3 class="text-lg md:text-xl font-bold mx-2">Amanda Barbieri</h3>
@@ -37,10 +40,93 @@
 			</button>
 		</nav>
 
-		<main class="mx-4 ">
+		<main class="text-lg px-4 py-6 lg:px-40 md:mb-36 lg:mb-28 md:flex md:justify-between">
+			<section>
+				<h1 class="pb-8 text-4xl lg:text-5xl font-bold">Contact</h1>
+				<p class="">Looking forward to hearing from you</p>
+				<h4 class="font-semibold mt-16">Phone</h4>
+				<p>914-539-7557</p>
+				<h4 class="font-semibold mt-6">Email</h4>
+				<p>aobarbieri@gmail.com</p>
+			</section>
 
-
-        </main>
+			<section class="md:pt-4 lg:pt-6">
+				<form action="https://formspree.io/f/xzbobqov" class="py-10" id="form" method="POST">
+					<ul>
+						<li class="my-4">
+							<label class="pl-1" for="name">Name</label>
+							<input
+								class="
+									block
+									w-full
+									md:w-80
+									lg:w-96
+									h-8
+									box-border
+									border border-gray-300
+									focus:outline-none focus:ring focus:ring-rose-200
+								"
+								type="text"
+								id="name"
+								name="user_name"
+							/>
+						</li>
+						<li class="my-4">
+							<label class="pl-1" for="mail">Email *</label>
+							<input
+								class="
+									block
+									w-full
+									h-8
+									box-border
+									border border-gray-300
+									focus:outline-none focus:ring focus:ring-rose-200
+								"
+								type="email"
+								id="mail"
+								name="user_email"
+								required
+							/>
+						</li>
+						<li class="my-4">
+							<label class="pl-1" for="msg">Message</label>
+							<textarea
+								class="
+									block
+									p-2
+									w-full
+									h-24
+									box-border
+									align-top
+									border border-gray-300
+									focus:outline-none focus:ring focus:ring-rose-200
+								"
+								id="msg"
+								name="user_message"
+								required
+							></textarea>
+						</li>
+						<li class="my-6">
+							<button
+								class="
+									border
+									rounded
+									border-gray-300
+									py-2
+									px-8
+									text-gray-900
+									hover:bg-gray-800 hover:text-white
+								"
+								type="submit"
+							>
+								Submit
+							</button>
+							<p id="status" class="lg:ml-6 inline text-sm"></p>
+						</li>
+					</ul>
+				</form>
+			</section>
+		</main>
 
 		<footer
 			class="
@@ -67,8 +153,5 @@
 				<i class="fab fa-github-alt text-lg"></i>
 			</div>
 		</footer>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script language="javascript" type="text/javascript" src="./script.js"></script>
 	</body>
 </html>
