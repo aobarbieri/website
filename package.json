@@ -1,16 +1,15 @@
 {
-  "name": "profile-card-master",
-  "version": "1.0.0",
-  "description": "[Profile Card](https://www.tailwindtoolbox.com/templates/profile-card) is a single page template for use as a user profile website / card created in [Tailwind CSS](https://tailwindcss.com/) by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).",
-  "main": "tailwind.config.js",
-  "scripts": {
-    "watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "tailwindcss": "^3.0.2"
-  }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"watch": "npx tailwindcss -i ./tailwind.css -o ./dist/styles.css --watch"
+	},
+	"keywords": [],
+	"author": "Amanda Barbieri",
+	"license": "",
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.4",
+		"tailwindcss": "^3.0.2"
+	}
 }
