@@ -7,7 +7,7 @@
 		<title>Amanda Barbieri</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link href="styles.css" rel="stylesheet" />
-		<link href="../src/index.css" rel="stylesheet" />
+		<link href="index.css" rel="stylesheet" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,9 @@
 			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://unpkg.com/scrollreveal@4"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+		<script src="./script.js" defer></script>
 	</head>
 	<body class="font-worksans font-light bg-gray-100 text-black">
 		<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
@@ -38,10 +41,10 @@
 		</nav>
 
 		<main class="px-4 py-6 lg:m-0 text-lg lg:px-40">
-			<h1 class="pb-8 text-4xl lg:text-5xl font-bold">Projects</h1>
+			<h1 class="headline pb-8 text-4xl lg:text-5xl font-bold">Projects</h1>
 
 			<article class="text-base">
-				<section class="md:flex justify-between">
+				<section class="punchline md:flex justify-between">
 					<div class="md:mr-10 lg:basis-1/3">
 						<h2 class="pb-4 lg:pb-6 text-3xl font-semibold">flickbase</h2>
 						<p>
@@ -61,13 +64,13 @@
 						>
 					</div>
 					<img
-						class="pt-6 md:pt-0 md:h-112"
+						class="drop-shadow-lg pt-6 md:pt-0 md:h-112"
 						src="../src/images/flickbase.png"
 						alt="flickbase project avatar"
 					/>
 				</section>
 
-				<section class="my-6 md:my-28 md:flex justify-between">
+				<section class="punchline my-6 md:my-28 md:flex justify-between">
 					<div class="md:mr-10 lg:basis-1/3">
 						<h2 class="pb-4 lg:pb-6 text-3xl font-semibold">Quote Generator</h2>
 						<p>
@@ -85,7 +88,7 @@
 						>
 					</div>
 					<img
-						class="pt-6 md:pt-0 md:h-112"
+						class="drop-shadow-lg pt-6 md:pt-0 md:h-112"
 						src="../src/images/quote-generator.png"
 						alt="Quote Generator project avatar"
 					/>
@@ -95,6 +98,7 @@
 
 		<footer
 			class="
+				headline
 				border-t border-gray-300
 				px-4
 				pt-12
@@ -121,7 +125,9 @@
 			</div>
 		</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script language="javascript" type="text/javascript" src="./script.js"></script>
+		<script>
+			ScrollReveal().reveal('.headline', { delay: 500, duration: 1500 });
+			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 1500 });
+		</script>
 	</body>
 </html>

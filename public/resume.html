@@ -7,7 +7,7 @@
 		<title>Amanda Barbieri</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link href="styles.css" rel="stylesheet" />
-		<link href="../src/index.css" rel="stylesheet" />
+		<link href="index.css" rel="stylesheet" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,10 @@
 			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<script src="https://unpkg.com/scrollreveal@4"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+		<script src="./script.js" defer></script>
 	</head>
 	<body class="font-worksans text-base bg-gray-100 text-black">
 		<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
@@ -38,9 +42,9 @@
 		</nav>
 
 		<main class="py-6 text-lg lg:text-base">
-			<h1 class="px-4 lg:px-40 pb-8 text-4xl lg:text-5xl font-bold">Resume</h1>
+			<h1 class="headline px-4 lg:px-40 pb-8 text-4xl lg:text-5xl font-bold">Resume</h1>
 
-			<section class="px-4 lg:px-40 lg:grid lg:grid-cols-2">
+			<section class="punchline px-4 lg:px-40 lg:grid lg:grid-cols-2">
 				<h2 class="pb-8 text-3xl font-semibold">
 					Work<br />
 					Experience
@@ -79,7 +83,7 @@
 				</div>
 			</section>
 
-			<section class="px-4 lg:px-0 pb-8 my-6 border-y border-gray-300">
+			<section class="punchline px-4 lg:px-0 pb-8 my-6 border-y border-gray-300">
 				<div class="lg:px-40 lg:grid lg:grid-cols-2">
 					<h2 class="py-8 text-3xl font-semibold">Education</h2>
 					<div class="lg:pt-8">
@@ -130,7 +134,7 @@
 				</div>
 			</section>
 
-			<section class="px-4 lg:px-40 lg:grid lg:grid-cols-2">
+			<section class="punchline px-4 lg:px-40 lg:grid lg:grid-cols-2">
 				<h2 class="pb-8 text-3xl font-semibold">
 					Skills<br />
 					& Expertise
@@ -149,6 +153,7 @@
 
 		<footer
 			class="
+				headline
 				border-t border-gray-300
 				px-4
 				pt-12
@@ -175,7 +180,9 @@
 			</div>
 		</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script language="javascript" type="text/javascript" src="./script.js"></script>
+		<script>
+			ScrollReveal().reveal('.headline', { delay: 500, duration: 1500 });
+			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 1500 });
+		</script>
 	</body>
 </html>

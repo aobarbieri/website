@@ -9,7 +9,7 @@
 
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link href="styles.css" rel="stylesheet" />
-		<link href="../src/index.css" rel="stylesheet" />
+		<link href="index.css" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -22,106 +22,73 @@
 		<script src="./script.js" defer></script>
 	</head>
 
-	<body class="font-worksans text-base bg-gray-100 text-black">
-		<header class="lg:h-screen xl:h-full xl:mb-64 md:mb-14">
-			<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
-				<div class="flex items-end">
-					<img class="hidden md:inline md:h-7" src="../src/images/html-logo.svg" alt="HTML logo" />
-					<h3 class="text-lg md:text-xl font-bold mx-2">Amanda Barbieri</h3>
-					<p class="text-xs leading-6 font-light">Frontend Developer</p>
-				</div>
-				<ul
-					class="
-						navbar__links
-						hidden
-						md:flex
-						font-light
-						md:justify-end md:items-end md:divide-x
-						divide-gray-900
-					"
-				>
-					<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
-					<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Projects</a></li>
-					<li class="text-2xl md:text-base md:pl-3"><a href="contact.html">Contact</a></li>
-				</ul>
-				<button id="menu-btn" class="navbar__menu-btn pr-4">
-					<i class="fas fa-bars"></i>
-				</button>
-			</nav>
+	<body class="font-worksans bg-gray-100 text-black">
+		<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
+			<div class="flex items-end">
+				<img class="hidden md:inline md:h-7" src="../src/images/html-logo.svg" alt="HTML logo" />
+				<h3 class="text-lg md:text-xl font-bold mx-2">Amanda Barbieri</h3>
+				<p class="text-xs leading-6 font-light">Frontend Developer</p>
+			</div>
+			<ul class="navbar__links hidden md:flex font-light md:justify-end md:items-end md:divide-x divide-gray-900">
+				<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
+				<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Projects</a></li>
+				<li class="text-2xl md:text-base md:pl-3"><a href="contact.html">Contact</a></li>
+			</ul>
+			<button id="menu-btn" class="navbar__menu-btn pr-4">
+				<i class="fas fa-bars"></i>
+			</button>
+		</nav>
 
-			<main class="mx-4 py-8 lg:mt-40 lg:mx-32 lg:flex lg:justify-center">
-				<section class="lg:mt-4 lg:justify-self-start lg:w-3/4 xl:max-w-lg">
-					<div class="mb-4 md:mb-9 md:px-6">
-						<h1 class="headline text-5xl md:text-8xl font-bold my-6">Hi, I'm Amanda</h1>
-						<!-- <h2 class="text-xl md:text-2xl font-semibold md:pl-1">A Bit About Me</h2> -->
-						<p class="punchline md:pl-1 font-light">
-							I love building tools that are user-friendly, simple and delightful.
-						</p>
-						<p class="punchline py-2 md:pl-1 font-light">
-							I was a student at Imagine School where I spent 6 months learning the fundamentals of
-							front-end web development. Currently working on personal projects which has helped me to
-							apply and develope even further my skills with front-end technologies.
-						</p>
-						<p class="punchline md:pl-1 font-light">
-							I am currently looking for a new role as a developer. Hire me?
-						</p>
-					</div>
-					<div
-						class="
-							tagline
-							flex flex-nowrap
-							md:mb-12
-							justify-between
-							md:justify-center
-							lg:justify-evenly
-							text-sm
-							lg:text-lg
-						"
-					>
-						<a href="../public/resume.html" class="font-medium uppercase">
-							<img
-								class="md:pr-1 h-8 md:h-14 inline"
-								src="../src/images/resume.png"
-								alt="Resume's Icon"
-							/>Resume
-						</a>
-						<a href="../public/projects.html" class="md:mx-6 font-medium uppercase">
-							<img
-								class="md:pr-1 h-8 md:h-14 inline"
-								src="../src/images/projection.png"
-								alt="Projects' Icon"
-							/>
-							Projects
-						</a>
-						<a href="../public/contact.html" class="font-medium uppercase">
-							<img
-								class="md:pr-1 h-8 md:h-14 inline"
-								src="../src/images/contact.png"
-								alt="Contact's Icon"
-							/>
-							Contact
-						</a>
-					</div>
-				</section>
+		<main class="text-sm mx-4 lg:mx-40 md:mt-32 lg:mt-48 md:flex md:place-content-center">
+			<section class="md:ml-8 md:w-3/6 md:h-2/6">
+				<article class="mb-4">
+					<h1 class="headline text-5xl md:text-6xl font-bold">Hi, I'm Amanda</h1>
+					<h2 class="punchline my-3 text-xl md:text-2xl font-semibold">A Bit About Me</h2>
+					<p class="punchline font-light">
+						I love building tools that are user-friendly, simple and delightful.
+					</p>
+					<p class="punchline py-3 font-light">
+						I was a student at Imagine School where I spent 6 months learning the fundamentals of front-end
+						web development. Currently, I am working on personal projects which has helped me to apply and
+						develope even further my skills using front-end technologies.
+					</p>
+					<p class="punchline font-light">
+						I am currently looking for a new role as a developer. <span class="text-base">Hire me?</span>
+					</p>
+				</article>
+				<article class="tagline text-sm lg:text-lg flex flex-nowrap justify-between lg:justify-evenly my-12">
+					<a href="../public/resume.html" class="font-medium uppercase">
+						<img
+							class="md:pr-1 h-8 lg:h-10 inline"
+							src="../src/images/resume.png"
+							alt="Resume's Icon"
+						/>Resume
+					</a>
+					<a href="../public/projects.html" class="md:mx-6 font-medium uppercase">
+						<img
+							class="md:pr-1 h-8 lg:h-10 inline"
+							src="../src/images/projection.png"
+							alt="Projects' Icon"
+						/>
+						Projects
+					</a>
+					<a href="../public/contact.html" class="font-medium uppercase">
+						<img class="md:pr-1 h-8 lg:h-10 inline" src="../src/images/contact.png" alt="Contact's Icon" />
+						Contact
+					</a>
+				</article>
+			</section>
 
-				<img
-					class="
-						headline
-						file:mt-8
-						md:mx-auto
-						lg:mr-10
-						w-screen
-						md:max-h-96 md:max-w-sm
-						lg:justify-self-end lg:order-first
-					"
-					src="../src/images/avatar.png"
-					alt="Amanda's Avatar"
-				/>
-			</main>
-		</header>
+			<img
+				class="w-4/5 md:w-2/6 md:h-2/6 my-0 mx-auto md:m-0 pb-12 md:order-first"
+				src="../src/images/avatar.png"
+				alt="Amanda's Avatar"
+			/>
+		</main>
 
 		<footer
 			class="
+				headline
 				border-t border-gray-300
 				px-4
 				pt-12
