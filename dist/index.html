@@ -41,22 +41,31 @@
 
 		<main class="text-sm mx-4 lg:mx-40 md:mt-32 lg:mt-48 md:mb-32 md:flex md:place-content-center">
 			<section class="md:ml-8 md:w-3/6 md:h-2/6">
-				<article class="mb-4">
-					<h1 class="headline text-5xl md:text-6xl font-bold">Hi, I'm Amanda</h1>
-					<h2 class="punchline my-3 text-xl md:text-2xl font-semibold">A Bit About Me</h2>
-					<p class="punchline font-light">
-						I love building tools that are user-friendly, simple and delightful.
-					</p>
-					<p class="punchline py-3 font-light">
+				<article class="headline load-hidden mb-4">
+					<h1 class="text-5xl md:text-6xl font-bold">Hi, I'm Amanda</h1>
+					<h2 class="my-3 text-xl md:text-2xl font-semibold">A Bit About Me</h2>
+					<p class="font-light">I love building tools that are user-friendly, simple and delightful.</p>
+					<p class="py-3 font-light">
 						I was a student at Imagine School where I spent 6 months learning the fundamentals of front-end
-						web development. Currently, I am working on personal projects which has helped me to apply and
+						web development. Currently, I am working on personal projects which has helped me apply and
 						develope even further my skills using front-end technologies.
 					</p>
-					<p class="punchline font-light">
+					<p class="font-light">
 						I am currently looking for a new role as a developer. <span class="text-base">Hire me?</span>
 					</p>
 				</article>
-				<article class="tagline text-sm lg:text-lg flex flex-nowrap justify-between lg:justify-evenly my-12">
+				<article
+					class="
+						punchline
+						load-hidden
+						text-sm
+						lg:text-lg
+						flex flex-nowrap
+						justify-between
+						lg:justify-evenly
+						my-12
+					"
+				>
 					<a href="./resume.html" class="font-medium uppercase">
 						<img class="md:pr-1 h-8 lg:h-10 inline" src="./images/resume.png" alt="Resume's Icon" />Resume
 					</a>
@@ -72,7 +81,7 @@
 			</section>
 
 			<img
-				class="w-4/5 md:w-2/6 md:h-2/6 my-0 mx-auto md:m-0 pb-12 md:pt-8 md:order-first"
+				class="headline load-hidden w-4/5 md:w-2/6 md:h-2/6 my-0 mx-auto md:m-0 pb-12 md:pt-8 md:order-first"
 				src="./images/avatar.png"
 				alt="Amanda's Avatar"
 			/>
@@ -105,11 +114,9 @@
 				<a href="https://github.com/aobarbieri" target="_blank"><i class="fab fa-github-alt text-lg"></i></a>
 			</div>
 		</footer>
-
 		<script>
-			ScrollReveal().reveal('.headline', { delay: 500, duration: 1500 });
-			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 1500 });
-			ScrollReveal().reveal('.tagline', { delay: 2000, duration: 1500 });
+			ScrollReveal().reveal('.headline', { duration: 2000 });
+			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 3000 });
 		</script>
 	</body>
 </html>

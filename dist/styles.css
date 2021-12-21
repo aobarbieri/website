@@ -515,6 +515,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -691,6 +715,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1.5rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .align-top {
   vertical-align: top;
 }
@@ -856,6 +884,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 2.5rem;
   }
 
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -878,6 +910,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:h-112 {
     height: 28rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
+  }
+
+  .md\:max-h-80 {
+    max-height: 20rem;
   }
 
   .md\:w-80 {

@@ -43,7 +43,7 @@
 		</nav>
 
 		<main class="text-lg px-4 py-6 lg:px-40 md:mb-36 lg:mb-28 md:flex md:justify-between">
-			<section class="headline">
+			<section class="headline load-hidden">
 				<h1 class="pb-8 text-4xl lg:text-5xl font-bold">Contact</h1>
 				<p class="">Looking forward to hearing from you</p>
 				<h4 class="font-semibold mt-16">Phone</h4>
@@ -85,7 +85,7 @@
 				</article>
 			</section>
 
-			<section class="punchline md:pt-4 lg:pt-6">
+			<section class="punchline load-hidden md:pt-4 lg:pt-6">
 				<form action="https://formspree.io/f/xzbobqov" class="py-10" id="form" method="POST">
 					<ul>
 						<li class="my-4">
@@ -191,8 +191,8 @@
 			</div>
 		</footer>
 		<script>
-			ScrollReveal().reveal('.headline', { delay: 500, duration: 1500 });
-			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 1500 });
+			ScrollReveal().reveal('.headline', { duration: 2000 });
+			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 3000 });
 		</script>
 	</body>
 </html>

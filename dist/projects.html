@@ -41,13 +41,13 @@
 		</nav>
 
 		<main class="px-4 py-6 lg:m-0 text-lg lg:px-40">
-			<h1 class="headline pb-8 text-4xl lg:text-5xl font-bold">Projects</h1>
+			<h1 class="headline load-hidden pb-8 text-4xl lg:text-5xl font-bold">Projects</h1>
 
 			<article class="text-base">
-				<section class="punchline md:flex justify-between">
+				<section class="headline load-hidden md:flex justify-between">
 					<div class="md:mr-10 lg:basis-1/3">
 						<h2 class="pb-4 lg:pb-6 text-3xl font-semibold">flickbase</h2>
-						<p>
+						<p class="mb-8 md:mb-5">
 							Flickbase simulates a streaming website. It offers a library with the most popular filmes
 							and television series using The Movie DB API.<br />
 							Technologies used: React, Typescript, Tailwind v2.2.16, FontAwesome, React Slick, The Movie
@@ -55,40 +55,86 @@
 						</p>
 						<a
 							href="https://flick-base.netlify.app/"
+							class="
+								inline
+								border
+								rounded
+								border-gray-300
+								py-2
+								px-8
+								text-gray-900
+								hover:bg-gray-800 hover:text-white
+								mr-3
+								text-sm
+							"
 							target="_blank"
-							class="mt-4 mb-2 block uppercase text-sm font-medium"
-							>Click to view</a
+							>Click to View</a
 						>
-						<a href="https://github.com/aobarbieri/flick-base" target="_blank"
+						<a
+							href="https://github.com/aobarbieri/flick-base"
+							target="_blank"
+							class="
+								border
+								rounded
+								border-gray-300
+								py-2
+								px-8
+								text-gray-900
+								hover:bg-gray-800 hover:text-white
+								text-sm
+							"
 							><i class="fab fa-github-alt text-lg"></i> GitHub</a
 						>
 					</div>
 					<img
-						class="drop-shadow-lg pt-6 md:pt-0 md:h-112"
+						class="drop-shadow-lg mt-9 md:mt-0 md:max-h-80"
 						src="./images/flickbase.png"
 						alt="flickbase project avatar"
 					/>
 				</section>
 
-				<section class="punchline my-6 md:my-28 md:flex justify-between">
+				<section class="headline load-hidden my-6 md:my-28 md:flex justify-between">
 					<div class="md:mr-10 lg:basis-1/3">
 						<h2 class="pb-4 lg:pb-6 text-3xl font-semibold">Quote Generator</h2>
-						<p>
+						<p class="mb-8 md:mb-5">
 							Motivational quotes to enlighten your day. Quote Generator does an asynchronous fetch
 							request to an API in order to get quotes
 						</p>
 						<a
 							href="https://aobarbieri.github.io/quote-generator/"
 							target="_blank"
-							class="mt-4 mb-2 block uppercase text-sm font-medium"
-							>Click to view</a
+							class="
+								inline
+								border
+								rounded
+								border-gray-300
+								py-2
+								px-8
+								text-gray-900
+								hover:bg-gray-800 hover:text-white
+								mr-3
+								text-sm
+							"
+							>Click to View</a
 						>
-						<a href="https://github.com/aobarbieri/quote-generator" target="_blank"
+						<a
+							href="https://github.com/aobarbieri/quote-generator"
+							target="_blank"
+							class="
+								border
+								rounded
+								border-gray-300
+								py-2
+								px-8
+								text-gray-900
+								hover:bg-gray-800 hover:text-white
+								text-sm
+							"
 							><i class="fab fa-github-alt text-lg"></i> GitHub</a
 						>
 					</div>
 					<img
-						class="drop-shadow-lg pt-6 md:pt-0 md:h-112"
+						class="drop-shadow-lg mt-9 md:mt-0 md:max-h-80"
 						src="./images/quote-generator.png"
 						alt="Quote Generator project avatar"
 					/>
@@ -125,8 +171,7 @@
 		</footer>
 
 		<script>
-			ScrollReveal().reveal('.headline', { delay: 500, duration: 1500 });
-			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 1500 });
+			ScrollReveal().reveal('.headline', { duration: 2000 });
 		</script>
 	</body>
 </html>

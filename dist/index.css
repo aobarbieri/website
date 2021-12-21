@@ -48,3 +48,7 @@
     color    : rgb(255, 0, 0);
     animation: status 4s ease forwards;
 }
+
+html.sr .load-hidden {
+    visibility: hidden;
+}

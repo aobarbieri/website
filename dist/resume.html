@@ -42,9 +42,9 @@
 		</nav>
 
 		<main class="py-6 text-lg lg:text-base">
-			<h1 class="headline px-4 lg:px-40 pb-8 text-4xl lg:text-5xl font-bold">Resume</h1>
+			<h1 class="headline load-hidden px-4 lg:px-40 pb-8 text-4xl lg:text-5xl font-bold">Resume</h1>
 
-			<section class="headline px-4 lg:px-40 lg:grid lg:grid-cols-2">
+			<section class="headline load-hidden px-4 lg:px-40 lg:grid lg:grid-cols-2">
 				<h2 class="pb-8 text-3xl font-semibold">
 					Work<br />
 					Experience
@@ -83,7 +83,7 @@
 				</div>
 			</section>
 
-			<section class="headline px-4 lg:px-0 pb-8 my-6 border-y border-gray-300">
+			<section class="headline load-hidden px-4 lg:px-0 pb-8 my-6 border-y border-gray-300">
 				<div class="lg:px-40 lg:grid lg:grid-cols-2">
 					<h2 class="py-8 text-3xl font-semibold">Education</h2>
 					<div class="lg:pt-8">
@@ -138,7 +138,7 @@
 				</div>
 			</section>
 
-			<section class="headline px-4 lg:px-40 lg:grid lg:grid-cols-2">
+			<section class="headline load-hidden px-4 lg:px-40 lg:grid lg:grid-cols-2">
 				<h2 class="pb-8 text-3xl font-semibold">
 					Skills<br />
 					& Expertise
@@ -184,8 +184,7 @@
 		</footer>
 
 		<script>
-			ScrollReveal().reveal('.headline', { delay: 500, duration: 1500 });
-			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 1500 });
+			ScrollReveal().reveal('.headline', { duration: 2000 });
 		</script>
 	</body>
 </html>
