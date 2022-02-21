@@ -1,0 +1,28 @@
+.btn-nobg,
+.btn-bg {
+    border       : 1px solid var(--font);
+    border-radius: 0.5rem;
+    font-weight  : 600;
+    transition   : transform 150ms ease;
+}
+
+.btn-bg {
+    background: var(--btn-bg-gradient);
+    color     : var(--bgfirst);
+}
+
+.btn-nobg:hover {
+    background: var(--btn-bg-gradient);
+    color     : var(--bgfirst);
+}
+
+.btn-bg:hover {
+    background: unset;
+    color     : var(--font);
+}
+
+.btn-bg:hover,
+.btn-nobg:hover {
+    transform: scale(1.05);
+    cursor   : pointer;
+}

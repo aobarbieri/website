@@ -1,0 +1,8 @@
+#status.success {
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    color    : rgb(255, 0, 0);
+    animation: status 4s ease forwards;
+}

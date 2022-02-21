@@ -1,0 +1,38 @@
+.navbar {
+    max-width            : 1440px;
+    grid-template-columns: auto 10%;
+}
+
+.navbar__menu-btn {
+    cursor  : pointer;
+    position: relative;
+    z-index : 10;
+
+    font-size   : 1.5rem;
+    width       : fit-content;
+    background  : unset;
+    border      : unset;
+    justify-self: end;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar__menu-btn {
+        display: none;
+    }
+}
+
+.navbar__links.active {
+    display        : grid;
+    align-content  : start;
+    justify-content: center;
+
+    position   : absolute;
+    padding-top: 8rem;
+    top        : 0;
+    left       : 0;
+    z-index    : 10;
+
+    width     : 100vw;
+    height    : 100vh;
+    background: var(--bg-gradient);
+}

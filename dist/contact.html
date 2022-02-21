@@ -21,8 +21,10 @@
 		<script src="./contact-form.js" defer></script>
 		<script src="./script.js" defer></script>
 	</head>
-	<body class="font-worksans bg-gray-50 text-black">
-		<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
+
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="navbar grid md:grid-cols-2 my-0 mx-auto py-6 md:py-8 px-2 md:px-4 lg:px-10">
 			<div class="flex items-end">
 				<a class="" href="index.html">
 					<img class="hidden md:inline md:h-7" src="./images/html-logo.svg" alt="HTML element logo" />
@@ -37,7 +39,7 @@
 				<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Projects</a></li>
 				<li class="text-2xl md:text-base md:pl-3"><a href="contact.html">Contact</a></li>
 			</ul>
-			<button class="navbar__menu-btn pr-4">
+			<button id="menu-btn" class="navbar__menu-btn pr-4">
 				<i class="fas fa-bars"></i>
 			</button>
 		</nav>
@@ -53,32 +55,13 @@
 				<article class="mt-6">
 					<a
 						href="https://www.linkedin.com/in/amanda-barbieri/"
-						class="
-							border
-							rounded
-							border-gray-300
-							py-2
-							px-8
-							text-gray-900
-							hover:bg-gray-800 hover:text-white
-							mr-3
-							text-sm
-						"
+						class="border rounded border-gray-300 py-2 px-8 text-gray-900 hover:bg-gray-800 hover:text-white mr-3 text-sm"
 						target="_blank"
 						>View LinkedIn</a
 					>
 					<a
 						href="https://github.com/aobarbieri"
-						class="
-							border
-							rounded
-							border-gray-300
-							py-2
-							px-8
-							text-gray-900
-							hover:bg-gray-800 hover:text-white
-							text-sm
-						"
+						class="border rounded border-gray-300 py-2 px-8 text-gray-900 hover:bg-gray-800 hover:text-white text-sm"
 						target="_blank"
 						>View GitHub</a
 					>
@@ -91,16 +74,7 @@
 						<li class="my-4">
 							<label class="pl-1" for="name">Name</label>
 							<input
-								class="
-									block
-									w-full
-									md:w-80
-									lg:w-96
-									h-8
-									box-border
-									border border-gray-300
-									focus:outline-none focus:ring focus:ring-rose-200
-								"
+								class="block w-full md:w-80 lg:w-96 h-8 box-border border border-gray-300 focus:outline-none focus:ring focus:ring-rose-200"
 								type="text"
 								id="name"
 								name="user_name"
@@ -109,14 +83,7 @@
 						<li class="my-4">
 							<label class="pl-1" for="mail">Email *</label>
 							<input
-								class="
-									block
-									w-full
-									h-8
-									box-border
-									border border-gray-300
-									focus:outline-none focus:ring focus:ring-rose-200
-								"
+								class="block w-full h-8 box-border border border-gray-300 focus:outline-none focus:ring focus:ring-rose-200"
 								type="email"
 								id="mail"
 								name="user_email"
@@ -126,16 +93,7 @@
 						<li class="my-4">
 							<label class="pl-1" for="msg">Message</label>
 							<textarea
-								class="
-									block
-									p-2
-									w-full
-									h-24
-									box-border
-									align-top
-									border border-gray-300
-									focus:outline-none focus:ring focus:ring-rose-200
-								"
+								class="block p-2 w-full h-24 box-border align-top border border-gray-300 focus:outline-none focus:ring focus:ring-rose-200"
 								id="msg"
 								name="user_message"
 								required
@@ -143,15 +101,7 @@
 						</li>
 						<li class="my-6">
 							<button
-								class="
-									border
-									rounded
-									border-gray-300
-									py-2
-									px-8
-									text-gray-900
-									hover:bg-gray-800 hover:text-white
-								"
+								class="border rounded border-gray-300 py-2 px-8 text-gray-900 hover:bg-gray-800 hover:text-white"
 								type="submit"
 							>
 								Submit
@@ -164,15 +114,7 @@
 		</main>
 
 		<footer
-			class="
-				border-t border-gray-300
-				px-4
-				pt-12
-				pb-16
-				my-8
-				text-base
-				md:grid md:grid-cols-3 md:place-items-center
-			"
+			class="border-t border-gray-300 px-4 pt-12 pb-16 my-8 text-base md:grid md:grid-cols-3 md:place-items-center"
 		>
 			<div>
 				<h4 class="text-lg font-semibold">Phone</h4>

@@ -6,22 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Amanda Barbieri</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Style Sheets -->
 		<link href="styles.css" rel="stylesheet" />
 		<link href="index.css" rel="stylesheet" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600;700&display=swap"
-			rel="stylesheet"
-		/>
-
+		<!-- Scroll Reveal Script -->
 		<script src="https://unpkg.com/scrollreveal@4"></script>
+
+		<!-- JQuery Script -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 		<script src="./script.js" defer></script>
 	</head>
-	<body class="font-worksans text-base bg-gray-50 text-black">
-		<nav class="navbar grid md:grid-cols-2 my-8 px-2 md:px-4 lg:px-10">
+
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="navbar grid md:grid-cols-2 my-0 mx-auto py-6 md:py-8 px-2 md:px-4 lg:px-10">
 			<div class="flex items-end">
 				<a class="" href="index.html">
 					<img class="hidden md:inline md:h-7" src="./images/html-logo.svg" alt="HTML element logo" />
@@ -31,21 +31,22 @@
 				</a>
 				<p class="text-xs leading-6 font-light">Frontend Developer</p>
 			</div>
-			<ul class="navbar__links hidden md:flex font-light md:justify-end md:items-end md:divide-x divide-gray-900">
+			<ul class="navbar__links hidden md:flex font-light md:justify-end md:items-end">
 				<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
-				<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Projects</a></li>
+				<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Work</a></li>
 				<li class="text-2xl md:text-base md:pl-3"><a href="contact.html">Contact</a></li>
 			</ul>
-			<button class="navbar__menu-btn pr-4">
+			<button id="menu-btn" class="navbar__menu-btn pr-4">
 				<i class="fas fa-bars"></i>
 			</button>
 		</nav>
 
-		<main class="py-6 text-lg lg:text-base">
-			<h1 class="headline load-hidden px-4 lg:px-40 pb-8 text-4xl lg:text-5xl font-bold">Resume</h1>
+		<main class="py-6 container">
+			<h1 class="headline load-hidden pb-8 text-4xl font-bold">Resume</h1>
 
-			<section class="headline load-hidden px-4 lg:px-40 lg:grid lg:grid-cols-2">
-				<h2 class="pb-8 text-3xl font-semibold">
+			<!-- Work Experience -->
+			<section class="headline load-hidden lg:grid lg:grid-cols-2">
+				<h2 class="pb-8 text-2xl font-semibold">
 					Work<br />
 					Experience
 				</h2>
@@ -53,15 +54,18 @@
 					<article class="lg:flex">
 						<p class="basis-1/3">Aug 2021 - Present</p>
 						<div class="basis-2/3 lg:pl-2">
-							<h3 class="font-semibold">Frontend Developer</h3>
-							<p>Currently working on personal projects and improving my coding skills in JavaScript.</p>
+							<h3 class="font-semibold pb-2">Frontend Developer</h3>
+							<p>
+								Improving my skills in, and understanding of vanilla JavaScript and React. Also, having
+								fun with #100Devs coding bootcamp.
+							</p>
 						</div>
 					</article>
 					<article class="py-6 lg:flex">
 						<p class="basis-1/3">Mar 2021 - Aug 2021</p>
 						<div class="basis-2/3 lg:pl-2">
 							<h3 class="font-semibold">Administrative Assistant</h3>
-							<p class="italic">Capelli New York</p>
+							<p class="italic text-sm font-light pb-2">Capelli New York</p>
 							<p>
 								Provided administrative support to the VP of IT and ensured efficient operation of the
 								office.
@@ -72,7 +76,7 @@
 						<p class="basis-1/3">Jan 2020 - Nov 2020</p>
 						<div class="basis-2/3 lg:pl-2">
 							<h3 class="font-semibold">Peer Mentor</h3>
-							<p class="italic">Rockland Community College</p>
+							<p class="italic text-sm font-light pb-2">Rockland Community College</p>
 							<p>
 								Worked with students to create an open and safe environment as they adjust to life at
 								the college. Offered one-on-one and group assistance for academic and study skills
@@ -83,51 +87,39 @@
 				</div>
 			</section>
 
-			<section class="headline load-hidden px-4 lg:px-0 pb-8 my-6 border-y border-gray-300">
-				<div class="lg:px-40 lg:grid lg:grid-cols-2">
-					<h2 class="py-8 text-3xl font-semibold">Education</h2>
+			<!-- Education -->
+			<section class="headline load-hidden pb-8 my-6 border-y">
+				<div class="lg:grid lg:grid-cols-2">
+					<h2 class="py-8 text-2xl font-semibold">Education</h2>
 					<div class="lg:pt-8">
-						<article class="lg:flex">
-							<p class="basis-1/3">Feb 2021 - Aug 2021</p>
-							<div class="basis-2/3 lg:pl-2">
-								<h3 class="font-semibold">
-									Imagine School<br />
-									School of Computer Graphics |<br />
-									<span class="italic">Frontend Developer</span>
-								</h3>
-								<p>
-									Course focused on frontend technologies: HTML, CSS, Bootstrap, Tailwind, Git,
-									GitHub, JavaScript, Node and React.
-								</p>
-							</div>
-						</article>
-						<article class="py-6 lg:flex">
+						<article class="pb-6 lg:flex">
 							<p class="basis-1/3">2018 - 2020</p>
 							<div class="basis-2/3 lg:pl-2">
-								<h3 class="font-semibold">
-									Rockland Community College |<br /><span class="italic"
+								<h3 class="font-semibold inline">
+									Rockland Community College |<br /><span class="italic text-sm font-light"
 										>Computer Information Systems</span
 									>
 								</h3>
-								<p>
+								<p class="pt-2">
 									The program provides an interdisciplinary education that meets the technological
 									challenges in today’s society in the area of computer programming.
-									<span class="italic"
-										>Honors: Dean’s List, Phi Theta Kappa International Honor Society, Phi Sigma
-										Omicron, President of College Loops – Girls Who Code.
-									</span>
 								</p>
+								<span class="text-xs font-light"
+									>Honors: Dean’s List, Phi Theta Kappa International Honor Society, Phi Sigma
+									Omicron, President of College Loops – Girls Who Code.
+								</span>
 							</div>
 						</article>
 						<article class="lg:flex">
 							<p class="basis-1/3">2012 - 2015</p>
 							<div class="basis-2/3 lg:pl-2">
-								<h3 class="font-semibold">
-									UNIMEP - Universidade Metodista de Piracicaba |<br /><span class="italic"
+								<h3 class="font-semibold inline">
+									UNIMEP - Universidade Metodista de Piracicaba |<br /><span
+										class="italic text-sm font-light"
 										>International Trade</span
 									>
 								</h3>
-								<p>
+								<p class="pt-2">
 									The program emphasizes how politics, law and culture affect international trade
 									practices. Coursework focused on importing and exporting, international product
 									marketing and global supply chain management.
@@ -138,10 +130,10 @@
 				</div>
 			</section>
 
-			<section class="headline load-hidden px-4 lg:px-40 lg:grid lg:grid-cols-2">
-				<h2 class="pb-8 text-3xl font-semibold">
+			<section class="headline load-hidden lg:grid lg:grid-cols-2">
+				<h2 class="pb-8 text-2xl font-semibold">
 					Skills<br />
-					& Expertise
+					& Tools
 				</h2>
 				<div class="lg:flex">
 					<div class="basis-1/3"></div>
@@ -154,34 +146,6 @@
 				</div>
 			</section>
 		</main>
-
-		<footer
-			class="
-				border-t border-gray-300
-				px-4
-				pt-12
-				pb-16
-				my-8
-				text-base
-				md:grid md:grid-cols-3 md:place-items-center
-			"
-		>
-			<div>
-				<h4 class="text-lg font-semibold">Phone</h4>
-				<p>914-539-7557</p>
-			</div>
-			<div>
-				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Email</h4>
-				<p>aobarbieri@gmail.com</p>
-			</div>
-			<div>
-				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Follow Me</h4>
-				<a href="https://www.linkedin.com/in/amanda-barbieri/" target="_blank"
-					><i class="fab fa-linkedin-in mr-3 text-lg"></i
-				></a>
-				<a href="https://github.com/aobarbieri" target="_blank"><i class="fab fa-github-alt text-lg"></i></a>
-			</div>
-		</footer>
 
 		<script>
 			ScrollReveal().reveal('.headline', { duration: 2000 });
