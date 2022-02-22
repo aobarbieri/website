@@ -14,11 +14,11 @@
 
 :root {
     --font    : rgb(255, 241, 242, 0.8);
-    --bgfirst : #1a1918;
-    --bgsecond: #141211;
+    --bgfirst : #141211;
+    --bgsecond: #100f0e;
 
-    --btn-bg-gradient: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
-    --bg-gradient    : linear-gradient(180deg, var(--bgfirst), var(--bgsecond) 74%);
+    --btn-bg-gradient: linear-gradient(315deg, #ffcfdf, #b0f3f1 74%);
+    --bg-gradient    : linear-gradient(180deg, var(--bgfirst), var(--bgsecond) 20%);
 }
 
 * {
@@ -45,12 +45,31 @@ body {
     font-weight: 400;
 }
 
+footer {
+    background: var(--btn-bg-gradient);
+    color     : var(--bgsecond);
+}
+
+form input,
+form textarea {
+    border-bottom: 3px solid #b0f3f1;
+    border-right : 3px solid #b0f3f1;
+    color        : #141211;
+}
+
 .mocks {
     max-width: 19rem;
 }
 
+.avatar {
+    padding   : 2px;
+    background: var(--btn-bg-gradient);
+}
+
 .container__about,
-.container__projects {
+.container__projects,
+.container__tools,
+.container__contact {
     background   : rgb(255 255 255/2%);
     box-shadow   : 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
@@ -63,11 +82,27 @@ body {
     margin: 1rem;
 }
 
+.home {
+    height     : 90vh;
+    width      : auto;
+    margin     : 0 auto;
+    padding    : 0 1rem;
+    display    : flex;
+    align-items: center;
+}
+
 .container__about {
     padding: 2rem 1rem;
 }
 
-.container__projects {
+.container__projects,
+.container__contact {
+    padding: 1rem;
+}
+
+.container__tools {
+    width  : 100%;
+    margin : 0 auto;
     padding: 1rem;
 }
 
@@ -78,25 +113,29 @@ body {
         max-width: 36rem;
     }
 
+    .home {
+        max-width: 680px;
+    }
+
     .container__about {
         max-width: 720px;
         margin   : 3.5rem auto;
         padding  : 2rem;
     }
 
-    .container__projects {
+    .container__projects,
+    .container__contact {
         padding: 2rem 3rem;
+    }
+
+    .container__tools {
+        width  : 80%;
+        padding: 2rem;
     }
 }
 
 /* Laptop */
 @media screen and (min-width: 1024px) {
-    .home {
-        height     : 80vh;
-        display    : flex;
-        align-items: center;
-    }
-
     .container {
         max-width: 1140px;
         margin   : 0 auto;

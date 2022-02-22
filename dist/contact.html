@@ -6,17 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Amanda Barbieri</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Style Sheets -->
 		<link href="styles.css" rel="stylesheet" />
 		<link href="index.css" rel="stylesheet" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600;700&display=swap"
-			rel="stylesheet"
-		/>
-
+		<!-- Scrool Reveal Script -->
 		<script src="https://unpkg.com/scrollreveal@4"></script>
+
+		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 		<script src="./contact-form.js" defer></script>
 		<script src="./script.js" defer></script>
@@ -34,9 +32,9 @@
 				</a>
 				<p class="text-xs leading-6 font-light">Frontend Developer</p>
 			</div>
-			<ul class="navbar__links hidden md:flex font-light md:justify-end md:items-end md:divide-x divide-gray-900">
+			<ul class="navbar__links hidden md:flex font-light md:justify-end md:items-end">
 				<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
-				<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Projects</a></li>
+				<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Work</a></li>
 				<li class="text-2xl md:text-base md:pl-3"><a href="contact.html">Contact</a></li>
 			</ul>
 			<button id="menu-btn" class="navbar__menu-btn pr-4">
@@ -44,94 +42,97 @@
 			</button>
 		</nav>
 
-		<main class="text-lg px-4 py-6 lg:px-40 md:mb-36 lg:mb-28 md:flex md:justify-between">
+		<!-- Contact -->
+		<main class="container py-6">
 			<section class="headline load-hidden">
-				<h1 class="pb-8 text-4xl lg:text-5xl font-bold">Contact</h1>
-				<p class="">Looking forward to hearing from you</p>
-				<h4 class="font-semibold mt-16">Phone</h4>
-				<p>914-539-7557</p>
-				<h4 class="font-semibold mt-6">Email</h4>
-				<p>aobarbieri@gmail.com</p>
-				<article class="mt-6">
-					<a
-						href="https://www.linkedin.com/in/amanda-barbieri/"
-						class="border rounded border-gray-300 py-2 px-8 text-gray-900 hover:bg-gray-800 hover:text-white mr-3 text-sm"
-						target="_blank"
-						>View LinkedIn</a
-					>
-					<a
-						href="https://github.com/aobarbieri"
-						class="border rounded border-gray-300 py-2 px-8 text-gray-900 hover:bg-gray-800 hover:text-white text-sm"
-						target="_blank"
-						>View GitHub</a
-					>
-				</article>
-			</section>
+				<h1 class="text-2xl pb-4 font-bold">Contact</h1>
+				<h2 class='text-4xl font-bold pb-8'>Get In Touch</h2>
 
-			<section class="punchline load-hidden md:pt-4 lg:pt-6">
-				<form action="https://formspree.io/f/xzbobqov" class="py-10" id="form" method="POST">
-					<ul>
-						<li class="my-4">
-							<label class="pl-1" for="name">Name</label>
-							<input
-								class="block w-full md:w-80 lg:w-96 h-8 box-border border border-gray-300 focus:outline-none focus:ring focus:ring-rose-200"
-								type="text"
-								id="name"
-								name="user_name"
-							/>
-						</li>
-						<li class="my-4">
-							<label class="pl-1" for="mail">Email *</label>
-							<input
-								class="block w-full h-8 box-border border border-gray-300 focus:outline-none focus:ring focus:ring-rose-200"
-								type="email"
-								id="mail"
-								name="user_email"
-								required
-							/>
-						</li>
-						<li class="my-4">
-							<label class="pl-1" for="msg">Message</label>
-							<textarea
-								class="block p-2 w-full h-24 box-border align-top border border-gray-300 focus:outline-none focus:ring focus:ring-rose-200"
-								id="msg"
-								name="user_message"
-								required
-							></textarea>
-						</li>
-						<li class="my-6">
-							<button
-								class="border rounded border-gray-300 py-2 px-8 text-gray-900 hover:bg-gray-800 hover:text-white"
-								type="submit"
-							>
-								Submit
-							</button>
-							<p id="status" class="lg:ml-6 inline text-sm"></p>
-						</li>
-					</ul>
-				</form>
+				<!-- Container -->
+				<section class="container__contact mb-10 lg:mb-28">
+					<p class="mb-4 lg:mb-6">I'd love to hear from you</p>
+
+					<div class='lg:flex lg:justify-between'>
+						<!-- Contact Form -->
+						<section class="punchline load-hidden">
+							<form action="https://formspree.io/f/xzbobqov" id="form" method="POST">
+								<ul>
+									<li class="mb-4">
+										<label class="pl-1" for="name">Name</label>
+										<input
+											class="block p-2 w-full md:w-80 lg:w-96 h-9 focus:outline-none focus:ring focus:ring-rose-200"
+											type="text"
+											id="name"
+											placeholder="Brendan Eich"
+											name="user_name"
+										/>
+									</li>
+									<li class="my-4">
+										<label class="pl-1" for="mail">Email *</label>
+										<input
+											class="block p-2 w-full md:w-80 lg:w-96 h-9 focus:outline-none focus:ring focus:ring-rose-200"
+											type="email"
+											id="mail"
+											placeholder="i_invented_javascript@internet.com"
+											name="user_email"
+											required
+										/>
+									</li>
+									<li class="my-4">
+										<label class="pl-1" for="msg">Message</label>
+										<textarea
+											class="block p-2 w-full md:w-80 lg:w-96 h-24 align-top focus:outline-none focus:ring focus:ring-rose-200"
+											id="msg"
+											name="user_message"
+											placeholder="Hello :)"
+											required
+										></textarea>
+									</li>
+
+									<!-- Submit Button -->
+									<li class="my-6">
+										<button
+											class="py-2 px-8 btn-bg"
+											type="submit"
+										>
+											Submit
+										</button>
+										<p id="status" class="ml-6 inline text-sm"></p>
+									</li>
+								</ul>
+							</form>
+						</section>
+	
+						<!-- Social Links -->
+						<section class="punchline load-hidden mt-14 lg:mt-4">
+								<h4 class="text-xl font-semibold">Find me on these online spaces too!</h4>
+
+								<section class="my-8">
+									<a href="https://www.linkedin.com/in/amanda-barbieri/" target="_blank"
+										><i class="fab fa-linkedin-in fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i
+									></a>
+									<a href="https://github.com/aobarbieri" target="_blank">
+										<i class="fab fa-github-alt mx-5 fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i></a>
+									<a href="https://twitter.com/aobarbieri" target="_blank">
+										<i class="fab fa-twitter fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i></a>
+								</section>
+	
+								<h4 class="font-semibold mt-6">Email</h4>
+								<p>aobarbieri@gmail.com</p>
+						</section>
+					</div>
+
+				</section>
 			</section>
 		</main>
 
-		<footer
-			class="border-t border-gray-300 px-4 pt-12 pb-16 my-8 text-base md:grid md:grid-cols-3 md:place-items-center"
-		>
-			<div>
-				<h4 class="text-lg font-semibold">Phone</h4>
-				<p>914-539-7557</p>
-			</div>
-			<div>
-				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Email</h4>
-				<p>aobarbieri@gmail.com</p>
-			</div>
-			<div>
-				<h4 class="mt-6 md:mt-0 text-lg font-semibold">Follow Me</h4>
-				<a href="https://www.linkedin.com/in/amanda-barbieri/" target="_blank"
-					><i class="fab fa-linkedin-in mr-3 text-lg"></i
-				></a>
-				<a href="https://github.com/aobarbieri" target="_blank"><i class="fab fa-github-alt text-lg"></i></a>
-			</div>
-		</footer>
+		<!-- Footer -->
+		<footer>
+	<section class='w-full text-center py-6'>
+	 <p class="text-xs">2021-2022 | Coded with &#128156 by Amanda Barbieri</p>
+	</section>
+</footer>
+
 		<script>
 			ScrollReveal().reveal('.headline', { duration: 2000 });
 			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 3000 });

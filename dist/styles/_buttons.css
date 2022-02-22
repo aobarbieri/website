@@ -1,6 +1,6 @@
 .btn-nobg,
 .btn-bg {
-    border       : 1px solid var(--font);
+    border       : none;
     border-radius: 0.5rem;
     font-weight  : 600;
     transition   : transform 150ms ease;
@@ -17,6 +17,7 @@
 }
 
 .btn-bg:hover {
+    border    : 1px solid var(--font);
     background: unset;
     color     : var(--font);
 }

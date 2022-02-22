@@ -35,29 +35,35 @@
 			</button>
 		</nav>
 
-		<!-- Home Page Container -->
+		<!-- About -->
 		<main class="home">
-			<section class="container container__about lg:m-0 lg:flex">
+			<section>
+				<!-- Avatar -->
+				<section class="headline load-hidden flex mb-16">
+					<img
+						class="avatar w-20 border rounded-full mr-6"
+						src="./images/face.svg"
+						alt="Amanda's Avatar"
+					/>
+					<div class="self-center">
+						<h1 class="font-semibold text-4xl">Amanda</h1>
+						<h2>Frontend Developer</h2>
+					</div>
+				</section>
+
 				<!-- About -->
-				<section class="lg:ml-8">
-					<!-- About -->
-					<article class="headline load-hidden mb-4">
-						<h1 class="font-bold text-4xl mb-5 md:mb-7">Hi, I'm Amanda</h1>
+				<article class="headline load-hidden mb-4">
 						<div class="md:text-lg">
 							<p>
-								I enjoy working with challenging layouts and building web pages that are user-friendly,
-								simple and delightful.
-							</p>
-							<p>
-								I am currently working on improving my skills in, and understanding of vanilla
-								JavaScript and React.
+								I'm a self taught Frontend Developer learning software engineering by doing.
+								I enjoy working with challenging layouts and building web pages that are user-friendly, simple and delightful.
 							</p>
 						</div>
-					</article>
+				</article>
 
-					<!-- Buttons -->
-					<article
-						class="punchline load-hidden flex flex-nowrap justify-between my-12 lg:mb-0 text-sm md:text-base"
+				<!-- Buttons -->
+				<article
+						class="punchline load-hidden flex flex-nowrap justify-evenly my-12 lg:mb-0 text-sm md:text-base"
 					>
 						<a class="btn-nobg py-1.5 md:py-2.5 px-2 md:px-12 lg:px-10" href="./resume.html"
 							><span class="mr-1.5">&#128221;</span> Resume</a
@@ -70,17 +76,207 @@
 						<a class="btn-nobg py-1.5 md:py-2.5 px-2 md:px-12 lg:px-10" href="./contact.html"
 							><span class="mr-1.5">&#128236;</span> Contact</a
 						>
-					</article>
-				</section>
-
-				<!-- Avatar -->
-				<img
-					class="headline load-hidden lg:order-first w-5/6 md:w-4/6 lg:w-2/6 my-0 mx-auto lg:self-center"
-					src="./images/face.svg"
-					alt="Amanda's Avatar"
-				/>
+				</article>
 			</section>
 		</main>
+
+		<!-- Work -->
+		<article class="container py-6">
+			<article>
+				<section class="headline load-hidden pb-12 font-bold">
+					<h1 class="text-2xl pb-4">Work</h1>
+					<h2 class="text-4xl">A Selection Of Stuff I've Built</h2>
+				</section>
+
+				<!-- Mix it up -->
+				<section class="headline load-hidden container__projects lg:flex justify-between">
+					<div class="lg:basis-1/2">
+						<h2 class="pr-4 text-3xl font-semibold inline">Mix It Up</h2>
+						<div class="inline">
+							<i class="devicon-react-original"></i>
+							<i class="devicon-tailwindcss-plain"></i>
+							<i class="devicon-javascript-plain"></i>
+						</div>
+						<p class="mb-10 mt-4 lg:mt-6">
+							<span class="text-sm font-light">In production</span><br />
+							Have you wondered which Cocktails you could make with the ingredients you have? Mix It Up is
+							coming to help you with that!
+						</p>
+						<div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-3">
+							<a
+								href="https://github.com/aobarbieri/mix-it-up-react"
+								target="_blank"
+								class="btn-bg py-2 px-10 text-sm"
+								><i class="fab fa-github-alt text-lg mr-1.5"></i> GitHub</a
+							>
+						</div>
+					</div>
+					<img
+						class="mocks drop-shadow-lg mt-9 lg:mt-0"
+						src="./images/mix-it-up-mock.png"
+						alt="Mix It Up project avatar"
+					/>
+				</section>
+
+				<!-- Flickbase -->
+				<section class="headline load-hidden container__projects my-10 lg:flex justify-between">
+					<div class="lg:basis-1/2">
+						<h2 class="pr-4 text-3xl font-semibold inline">Flickbase</h2>
+						<div class="inline">
+							<i class="devicon-react-original"></i>
+							<i class="devicon-tailwindcss-plain"></i>
+							<i class="devicon-typescript-plain"></i>
+						</div>
+						<p class="mb-10 mt-4 lg:mt-6">
+							Flickbase simulates a streaming website. It offers a library with the most popular filmes
+							and television series using The Movie DB API.
+						</p>
+						<div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-3">
+							<a
+								href="https://github.com/aobarbieri/flick-base"
+								target="_blank"
+								class="btn-bg py-2 px-10 text-sm"
+								><i class="fab fa-github-alt text-lg mr-1.5"></i> GitHub</a
+							>
+							<a href="https://flick-base.netlify.app/" class="btn-nobg py-2 px-8 text-sm" target="_blank"
+								>Click to View</a
+							>
+						</div>
+					</div>
+					<img
+						class="mocks drop-shadow-lg mt-9 lg:mt-0"
+						src="./images/flickbase-mock.png"
+						alt="flickbase project avatar"
+					/>
+				</section>
+
+				<!-- Quote Generator -->
+				<section class="headline load-hidden container__projects mb-10 lg:mb-28 lg:flex justify-between">
+					<div class="lg:basis-1/2">
+						<h2 class="pr-4 text-3xl font-semibold inline">Quote Generator</h2>
+						<div class="md:inline">
+							<i class="devicon-html5-plain"></i>
+							<i class="devicon-css3-plain"></i>
+							<i class="devicon-javascript-plain"></i>
+						</div>
+						<p class="mb-10 mt-4 lg:mt-6">
+							Motivational quotes to enlighten your day. Quote Generator does an asynchronous fetch
+							request to an API in order to get quotes
+						</p>
+						<div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-3">
+							<a
+								href="https://github.com/aobarbieri/quote-generator"
+								target="_blank"
+								class="btn-bg py-2 px-10 text-sm"
+								><i class="fab fa-github-alt text-lg mr-1.5"></i> GitHub</a
+							>
+							<a
+								href="https://aobarbieri.github.io/quote-generator/"
+								target="_blank"
+								class="btn-nobg py-2 px-8 text-sm"
+								>Click to View</a
+							>
+						</div>
+					</div>
+					<img
+						class="mocks drop-shadow-lg mt-9 lg:mt-0"
+						src="./images/quote-mock.png"
+						alt="Quote Generator project avatar"
+					/>
+				</section>
+			</article>
+		</article>
+
+		<!-- Contact -->
+		<section class="container py-6">
+			<section class="headline load-hidden">
+				<h1 class="text-2xl pb-4 font-bold">Contact</h1>
+				<h2 class='text-4xl font-bold pb-8'>Get In Touch</h2>
+
+				<!-- Container -->
+				<section class="container__contact mb-10 lg:mb-28">
+					<p class="mb-4 lg:mb-6">I'd love to hear from you</p>
+
+					<div class='lg:flex lg:justify-between'>
+						<!-- Contact Form -->
+						<section class="punchline load-hidden">
+							<form action="https://formspree.io/f/xzbobqov" id="form" method="POST">
+								<ul>
+									<li class="mb-4">
+										<label class="pl-1" for="name">Name</label>
+										<input
+											class="block p-2 w-full md:w-80 lg:w-96 h-9 focus:outline-none focus:ring focus:ring-rose-200"
+											type="text"
+											id="name"
+											placeholder="Brendan Eich"
+											name="user_name"
+										/>
+									</li>
+									<li class="my-4">
+										<label class="pl-1" for="mail">Email *</label>
+										<input
+											class="block p-2 w-full md:w-80 lg:w-96 h-9 focus:outline-none focus:ring focus:ring-rose-200"
+											type="email"
+											id="mail"
+											placeholder="i_invented_javascript@internet.com"
+											name="user_email"
+											required
+										/>
+									</li>
+									<li class="my-4">
+										<label class="pl-1" for="msg">Message</label>
+										<textarea
+											class="block p-2 w-full md:w-80 lg:w-96 h-24 align-top focus:outline-none focus:ring focus:ring-rose-200"
+											id="msg"
+											name="user_message"
+											placeholder="Hello :)"
+											required
+										></textarea>
+									</li>
+
+									<!-- Submit Button -->
+									<li class="my-6">
+										<button
+											class="py-2 px-8 btn-bg"
+											type="submit"
+										>
+											Submit
+										</button>
+										<p id="status" class="ml-6 inline text-sm"></p>
+									</li>
+								</ul>
+							</form>
+						</section>
+	
+						<!-- Social Links -->
+						<section class="punchline load-hidden mt-14 lg:mt-4">
+								<h4 class="text-xl font-semibold">Find me on these online spaces too!</h4>
+
+								<section class="my-8">
+									<a href="https://www.linkedin.com/in/amanda-barbieri/" target="_blank"
+										><i class="fab fa-linkedin-in fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i
+									></a>
+									<a href="https://github.com/aobarbieri" target="_blank">
+										<i class="fab fa-github-alt mx-5 fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i></a>
+									<a href="https://twitter.com/aobarbieri" target="_blank">
+										<i class="fab fa-twitter fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i></a>
+								</section>
+	
+								<h4 class="font-semibold mt-6">Email</h4>
+								<p>aobarbieri@gmail.com</p>
+						</section>
+					</div>
+
+				</section>
+			</section>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<section class='w-full text-center py-6'>
+				<p class="text-xs">2021-2022 | Coded with &#128156 by Amanda Barbieri</p>
+			</section>
+		</footer>
 
 		<!-- Scroll Reveal Scripts -->
 		<script>
