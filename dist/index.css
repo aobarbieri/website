@@ -57,8 +57,19 @@ form textarea {
     color        : #141211;
 }
 
+#work,
+#contact {
+    padding-top: 6rem;
+}
+
+.link-icon {
+    background: var(--btn-bg-gradient);
+}
+
 .mocks {
+    position : static;
     max-width: 19rem;
+    z-index  : -999;
 }
 
 .avatar {
@@ -83,10 +94,10 @@ form textarea {
 }
 
 .home {
-    height     : 90vh;
+    height     : 100vh;
     width      : auto;
     margin     : 0 auto;
-    padding    : 0 1rem;
+    padding    : 5.75rem 1rem 0;
     display    : flex;
     align-items: center;
 }
@@ -136,6 +147,10 @@ form textarea {
 
 /* Laptop */
 @media screen and (min-width: 1024px) {
+    .home {
+        padding: 5.25rem 1rem 0;
+    }
+
     .container {
         max-width: 1140px;
         margin   : 0 auto;

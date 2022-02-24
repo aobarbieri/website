@@ -11,29 +11,36 @@
 		<link href="styles.css" rel="stylesheet" />
 		<link href="index.css" rel="stylesheet" />
 
+		<!-- Devicon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+
 		<!-- Scripts -->
 		<script src="https://unpkg.com/scrollreveal@4"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+		<script src="./contact-form.js" defer></script>
 		<script src="./script.js" defer></script>
 	</head>
 
 	<body>
 		<!-- Navigation Bar -->
-		<nav class="navbar grid md:grid-cols-2 my-0 mx-auto py-6 md:py-8 px-2 md:px-4 lg:px-10">
-			<div class="flex items-end">
-				<img class="hidden md:inline md:h-7" src="./images/html-logo.svg" alt="HTML icon" />
-				<h3 class="text-lg md:text-xl font-semibold mx-2">Amanda Barbieri</h3>
-				<p class="text-xs leading-6 font-light">Frontend Developer</p>
-			</div>
-			<ul class="navbar__links hidden md:flex font-light md:justify-end md:items-end md:divide-x divide-gray-900">
-				<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
-				<li class="text-2xl md:text-base py-6 md:py-0 md:px-3"><a href="projects.html">Work</a></li>
-				<li class="text-2xl md:text-base md:pl-3"><a href="contact.html">Contact</a></li>
-			</ul>
-			<button id="menu-btn" class="navbar__menu-btn pr-4">
-				<i class="fas fa-bars"></i>
-			</button>
-		</nav>
+		<header class="fixed w-full">
+			<nav class="navbar backdrop-blur-sm grid md:grid-cols-2 my-0 mx-auto py-6 md:py-8 px-2 md:px-4 lg:px-10">
+				<div class="flex items-end">
+					<img class="hidden md:inline md:h-7" src="./images/html-logo.svg" alt="HTML icon" />
+					<h3 class="text-lg md:text-xl font-semibold mx-2">Amanda Barbieri</h3>
+				</div>
+				<ul class="navbar__links hidden md:flex font-light md:justify-end md:items-end">
+					<li class="text-2xl md:text-base md:pr-3"><a href="resume.html">Resume</a></li>
+					<li class="text-2xl md:text-base py-6 md:py-0 md:px-3">
+						<a class="navWorkLink" href="#work">Work</a></li>
+					<li class="text-2xl md:text-base md:pl-3">
+						<a class="navContactLink" href="#contact">Contact</a></li>
+				</ul>
+				<button id="menu-btn" class="navbar__menu-btn pr-4">
+					<i class="fas fa-bars"></i>
+				</button>
+			</nav>
+		</header>
 
 		<!-- About -->
 		<main class="home">
@@ -47,7 +54,7 @@
 					/>
 					<div class="self-center">
 						<h1 class="font-semibold text-4xl">Amanda</h1>
-						<h2>Frontend Developer</h2>
+						<h2 class="text-sm leading-6 font-light">Frontend Developer</h2>
 					</div>
 				</section>
 
@@ -63,25 +70,24 @@
 
 				<!-- Buttons -->
 				<article
-						class="punchline load-hidden flex flex-nowrap justify-evenly my-12 lg:mb-0 text-sm md:text-base"
+						class="page-links punchline load-hidden flex flex-nowrap my-12 lg:mb-0 text-sm md:text-lg"
 					>
-						<a class="btn-nobg py-1.5 md:py-2.5 px-2 md:px-12 lg:px-10" href="./resume.html"
-							><span class="mr-1.5">&#128221;</span> Resume</a
+						<a class="" href="./resume.html"
+							><img class="link-icon mr-1.5 h-8 inline p-1 rounded-xl" src="images/cap.svg"/> Resume</a
 						>
-
-						<a class="btn-nobg py-1.5 md:py-2.5 px-2 md:px-12 lg:px-10" href="./projects.html"
-							><span class="mr-1.5">&#128640;</span> Work</a
+						<a class="workLink mx-5 lg:mx-7" href="#work"
+							><img class="mr-1.5 link-icon h-8 inline p-1 rounded-xl" src='images/rocket.svg'/> Work</a
 						>
-
-						<a class="btn-nobg py-1.5 md:py-2.5 px-2 md:px-12 lg:px-10" href="./contact.html"
-							><span class="mr-1.5">&#128236;</span> Contact</a
+	
+						<a class="contactLink" href="#contact"
+							><img class="mr-1.5 link-icon h-8 inline p-1.5 rounded-xl" src='images/contact.svg'/>Contact</a
 						>
 				</article>
 			</section>
 		</main>
 
 		<!-- Work -->
-		<article class="container py-6">
+		<article class="container" id="work">
 			<article>
 				<section class="headline load-hidden pb-12 font-bold">
 					<h1 class="text-2xl pb-4">Work</h1>
@@ -112,7 +118,7 @@
 						</div>
 					</div>
 					<img
-						class="mocks drop-shadow-lg mt-9 lg:mt-0"
+						class="mocks drop-shadow-lg mt-9 lg:mt-0 -z-10"
 						src="./images/mix-it-up-mock.png"
 						alt="Mix It Up project avatar"
 					/>
@@ -120,7 +126,7 @@
 
 				<!-- Flickbase -->
 				<section class="headline load-hidden container__projects my-10 lg:flex justify-between">
-					<div class="lg:basis-1/2">
+					<div class="lg:basis-1/2 lg:text-right">
 						<h2 class="pr-4 text-3xl font-semibold inline">Flickbase</h2>
 						<div class="inline">
 							<i class="devicon-react-original"></i>
@@ -131,20 +137,20 @@
 							Flickbase simulates a streaming website. It offers a library with the most popular filmes
 							and television series using The Movie DB API.
 						</p>
-						<div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-3">
+						<div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:justify-items-end gap-2 lg:gap-0">
 							<a
 								href="https://github.com/aobarbieri/flick-base"
 								target="_blank"
 								class="btn-bg py-2 px-10 text-sm"
 								><i class="fab fa-github-alt text-lg mr-1.5"></i> GitHub</a
 							>
-							<a href="https://flick-base.netlify.app/" class="btn-nobg py-2 px-8 text-sm" target="_blank"
+							<a href="https://flick-base.netlify.app/" class="btn-bg py-2 px-8 text-sm lg:justify-self-center" target="_blank"
 								>Click to View</a
 							>
 						</div>
 					</div>
 					<img
-						class="mocks drop-shadow-lg mt-9 lg:mt-0"
+						class="mocks lg:order-first drop-shadow-lg mt-9 lg:mt-0 -z-10"
 						src="./images/flickbase-mock.png"
 						alt="flickbase project avatar"
 					/>
@@ -163,7 +169,7 @@
 							Motivational quotes to enlighten your day. Quote Generator does an asynchronous fetch
 							request to an API in order to get quotes
 						</p>
-						<div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-3">
+						<div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-2 lg:gap-0">
 							<a
 								href="https://github.com/aobarbieri/quote-generator"
 								target="_blank"
@@ -173,13 +179,13 @@
 							<a
 								href="https://aobarbieri.github.io/quote-generator/"
 								target="_blank"
-								class="btn-nobg py-2 px-8 text-sm"
+								class="btn-bg py-2 px-8 text-sm lg:justify-self-start"
 								>Click to View</a
 							>
 						</div>
 					</div>
 					<img
-						class="mocks drop-shadow-lg mt-9 lg:mt-0"
+						class="mocks drop-shadow-lg mt-9 lg:mt-0 -z-10"
 						src="./images/quote-mock.png"
 						alt="Quote Generator project avatar"
 					/>
@@ -188,7 +194,7 @@
 		</article>
 
 		<!-- Contact -->
-		<section class="container py-6">
+		<section class="container" id="contact">
 			<section class="headline load-hidden">
 				<h1 class="text-2xl pb-4 font-bold">Contact</h1>
 				<h2 class='text-4xl font-bold pb-8'>Get In Touch</h2>
@@ -254,12 +260,12 @@
 
 								<section class="my-8">
 									<a href="https://www.linkedin.com/in/amanda-barbieri/" target="_blank"
-										><i class="fab fa-linkedin-in fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i
+										><i class="fab fa-linkedin-in fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 link-icon p-1.5 rounded-xl text-black/90"></i
 									></a>
 									<a href="https://github.com/aobarbieri" target="_blank">
-										<i class="fab fa-github-alt mx-5 fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i></a>
+										<i class="fab fa-github-alt mx-5 fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 link-icon p-1.5 rounded-xl text-black/90"></i></a>
 									<a href="https://twitter.com/aobarbieri" target="_blank">
-										<i class="fab fa-twitter fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></i></a>
+										<i class="fab fa-twitter fa-2x transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 link-icon p-1.5 rounded-xl text-black/90"></i></a>
 								</section>
 	
 								<h4 class="font-semibold mt-6">Email</h4>

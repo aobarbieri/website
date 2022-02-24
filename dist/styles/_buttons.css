@@ -1,6 +1,6 @@
 .btn-nobg,
 .btn-bg {
-    border       : none;
+    border       : 1px solid transparent;
     border-radius: 0.5rem;
     font-weight  : 600;
     transition   : transform 150ms ease;
