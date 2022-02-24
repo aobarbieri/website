@@ -64,6 +64,8 @@ form textarea {
 
 .link-icon {
     background: var(--btn-bg-gradient);
+    height    : 2rem;
+    width     : auto;
 }
 
 .mocks {
