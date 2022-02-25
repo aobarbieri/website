@@ -62,20 +62,24 @@ form textarea {
     padding-top: 6rem;
 }
 
+.contact-icon,
 .link-icon {
     background: var(--btn-bg-gradient);
-    padding   : 0.375rem;
     color     : var(--bgfirst);
+    padding   : 0.375rem;
 }
 
-.workLink {
+.link-icon {
+    width: 32px;
+
+}
+
+.about .workLink {
     margin: 0 2rem;
 }
 
 .mocks {
-    position : static;
     max-width: 19rem;
-    z-index  : -999;
 }
 
 .avatar {
