@@ -68,6 +68,10 @@ form textarea {
     color     : var(--bgfirst);
 }
 
+.workLink {
+    margin: 0 2rem;
+}
+
 .mocks {
     position : static;
     max-width: 19rem;
