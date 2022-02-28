@@ -3,10 +3,11 @@
 const menuBtn = document.querySelector('.menu-btn');
 const iconMenu = document.querySelector('#iconMenu');
 const activeList = document.querySelector('#activeList');
+const toggleOff = document.querySelectorAll('.toggleOff');
 
 // listen to a click on button
-menuBtn.addEventListener('click', iconMenuToggle);
-menuBtn.addEventListener('click', activeIcons);
+menuBtn.addEventListener('click', toggleMenu);
+Array.from(toggleOff).forEach((element) => element.addEventListener('click', toggleMenu));
 
 // toggle the burger and xmark icons
 function iconMenuToggle() {
@@ -20,6 +21,11 @@ function activeIcons() {
 	activeList.classList.toggle('mobile');
 }
 
+function toggleMenu() {
+	iconMenuToggle();
+	activeIcons();
+}
+
 /* Move slowly to the target area */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	anchor.addEventListener('click', function (event) {
@@ -29,24 +35,3 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 		});
 	});
 });
-
-// const workLink = document.querySelector('.workLink');
-// const contactLink = document.querySelector('.contactLink');
-// const navWorkLink = document.querySelector('.navWorkLink');
-// const navContactLink = document.querySelector('.navContactLink');
-
-// workLink.addEventListener('click', smoothScroll);
-// contactLink.addEventListener('click', smoothScroll);
-// navWorkLink.addEventListener('click', smoothScroll);
-// navContactLink.addEventListener('click', smoothScroll);
-
-// function smoothScroll(event) {
-// 	event.preventDefault();
-// 	const href = this.getAttribute('href');
-// 	const offsetTop = document.querySelector(href).offsetTop;
-
-// 	scroll({
-// 		top: offsetTop,
-// 		behavior: 'smooth',
-// 	});
-// }
