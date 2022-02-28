@@ -20,7 +20,7 @@
     padding : 1.5rem 1rem;
 
     display           : grid;
-    grid-template-rows: 60px repeat(3, 40px);
+    grid-template-rows: 60px repeat(3, 50px);
     cursor            : pointer;
 }
 
@@ -28,10 +28,10 @@
 
 /* Mobile Items */
 .menu-btn {
-    background : unset;
-    border     : unset;
-    align-self : flex-start;
-    padding-top: .375rem;
+    background: unset;
+    border    : unset;
+    align-self: flex-start;
+    width     : 32px;
 }
 
 .mobile {

@@ -34,25 +34,26 @@
 					<li>
 						<a href="resume.html">Resume</a></li>
 					<li class="mx-5">
-						<a class="navWorkLink" href="index.html#work">Work</a></li>
+						<a class="navWorkLink" href="./index.html#work">Work</a></li>
 					<li>
-						<a class="navContactLink" href="index.html#contact">Contact</a></li>
+						<a class="navContactLink" href="./index.html#contact">Contact</a></li>
 				</ul>
 
 				<!-- Mobile -->
 				<section class="navbar__mobile">
 					<button class="menu-btn" >
-						<i class="fa-solid fa-bars"></i>
+						<i id='iconMenu' class="fa-2x fa-solid fa-bars"></i>
 					</button>
 
-					<section class="mobile">
+					<!-- Dropdown menu (toggle) -->
+					<section id='activeList' class="hidden">
 						<a href="./resume.html"
 							><i class="fa-solid fa-graduation-cap link-icon rounded-xl "></i></a
 						>
-						<a class="workLink" href="index.html#work"
+						<a class="workLink" href="./index.html#work"
 							><i class="fa-solid fa-rocket link-icon rounded-xl"></i></a
 							>
-						<a class="contactLink" href="index.html#contact"
+						<a class="contactLink" href="./index.html#contact"
 							><i class="fa-solid fa-comment-dots link-icon rounded-xl"></i></a
 						>
 					</section>
@@ -193,7 +194,7 @@
 		</footer>
 
 		<script>
-			ScrollReveal().reveal('.headline', { duration: 3000 });
+			ScrollReveal().reveal('.headline', { duration: 1000 });
 		</script>
 	</body>
 </html>
