@@ -1,4 +1,4 @@
-/* Mobile hamburger menu */
+/****** Mobile hamburger menu *******/
 // selects button and icons
 const menuBtn = document.querySelector('.menu-btn');
 const iconMenu = document.querySelector('#iconMenu');
@@ -26,7 +26,7 @@ function toggleMenu() {
 	activeIcons();
 }
 
-/* Move slowly to the target area */
+/****** Move slowly to the target area ******/
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	anchor.addEventListener('click', function (event) {
 		event.preventDefault();
