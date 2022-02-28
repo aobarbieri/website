@@ -8,9 +8,12 @@
     backdrop-filter : blur(6px);
 }
 
+.navbar__full {
+    display: none;
+}
+
 .navbar__mobile {
     position: absolute;
-    height  : 100vh;
     width   : fit-content;
     top     : 0;
     right   : 0;
@@ -18,18 +21,12 @@
 
     display           : grid;
     grid-template-rows: 60px repeat(3, 40px);
-
-    cursor         : pointer;
-    background     : var(--bg-gradient);
-    backdrop-filter: blur(6px);
-}
-
-.navbar__full {
-    display: none;
+    cursor            : pointer;
 }
 
 
-/* Items */
+
+/* Mobile Items */
 .menu-btn {
     background : unset;
     border     : unset;
@@ -38,12 +35,17 @@
 }
 
 .mobile {
+    height            : 100vh;
+    width             : min-content;
     display           : grid;
     grid-template-rows: repeat(3, 50px);
     align-content     : start;
     justify-items     : end;
 }
 
+.hidden {
+    display: none;
+}
 
 /* Tablet and Laptop */
 @media screen and (min-width: 768px) {
@@ -53,14 +55,14 @@
         grid-template-columns: 50% 50%;
     }
 
-    .navbar__mobile {
-        display: none;
-    }
-
     .navbar__full {
         font-weight    : 300;
         display        : flex;
         justify-content: flex-end;
         align-items    : flex-end;
+    }
+
+    .navbar__mobile {
+        display: none;
     }
 }

@@ -42,10 +42,11 @@
 				<!-- Mobile -->
 				<section class="navbar__mobile">
 					<button class="menu-btn" >
-						<i class="fa-solid fa-bars"></i>
+						<i id='iconMenu' class="fa-solid fa-bars"></i>
 					</button>
 
-					<section class="mobile">
+					<!-- Dropdown menu (toggle) -->
+					<section id='activeList' class="hidden">
 						<a href="./resume.html"
 							><i class="fa-solid fa-graduation-cap link-icon rounded-xl "></i></a
 						>
@@ -304,8 +305,8 @@
 
 		<!-- Scroll Reveal Scripts -->
 		<script>
-			ScrollReveal().reveal('.headline', { duration: 2000 });
-			ScrollReveal().reveal('.punchline', { delay: 1000, duration: 3000 });
+			ScrollReveal().reveal('.headline', { duration: 1000 });
+			ScrollReveal().reveal('.punchline', { delay: 500, duration: 1000 });
 		</script>
 	</body>
 </html>
