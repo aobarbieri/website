@@ -83,6 +83,8 @@ form textarea {
 }
 
 .avatar {
+    max-width : 5rem;
+    height    : auto;
     padding   : 2px;
     background: var(--btn-bg-gradient);
 }
