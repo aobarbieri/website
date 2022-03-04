@@ -176,4 +176,8 @@ form textarea {
         padding: 3rem 4rem;
 
     }
+
+    .work--description {
+        padding-left: 18px;
+    }
 }
