@@ -2,6 +2,6 @@
 
 This is my website/portfolio :) 
 
-https://amandadev.netlify.app/
+https://amitzian.dev
 
 Buil with 💜 using HTML, CSS, Tailwind & JS.
